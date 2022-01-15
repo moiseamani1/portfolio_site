@@ -20,16 +20,16 @@ otherTitle:{
   body: {
     color: "#BEBEBE"
   },
-  buttonsField: {
-    height: "calc(100% - 8rem)",
-    // flexGrow:"1",
-    position: "relative"
-  },
-  buttons: {
-    position: "absolute",
-    bottom: 0
-  }
-  ,
+  // buttonsField: {
+  //   height: "calc(100% - 8rem)",
+  //   // flexGrow:"1",
+  //   position: "relative"
+  // },
+  // buttons: {
+  //   position: "absolute",
+  //   bottom: 0
+  // }
+  // ,
   otherProjectsIcon: {
     width: "4rem"
   }
@@ -78,5 +78,16 @@ otherTitle:{
   centered:{
     margin:"auto"
   },
+
+  techStack:{
+    display: 'flex', 
+    flexDirection: 'row',
+    flexWrap:"wrap",
+    color:"white"
+  },
+
+  techStackItem:{
+    width:"max-content"
+  }
   
 }));

@@ -21,6 +21,16 @@ export default makeStyles((theme) => ({
     background : '#101010'
 
   },
+  navButton:{
+    background:"#DDB450",
+    color:"white",
+    "&:hover": {
+      color: "#DDB450",
+      background:"white"
+      
+  }
+  }
+  ,
   nav_links:{
     color:'white',
     "&:hover": {
@@ -45,6 +55,7 @@ export default makeStyles((theme) => ({
     flexGrow: 1,
   },
 
+ 
  
  
 }));

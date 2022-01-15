@@ -1,4 +1,6 @@
-import { createTheme, Icon, Toolbar, Typography,ThemeProvider, CssBaseline, Slide, AppBar, useScrollTrigger } from '@material-ui/core';
+import { createTheme, Icon, Toolbar, Typography,ThemeProvider, CssBaseline, Slide, AppBar, useScrollTrigger, Button, MuiThemeProvider } from '@material-ui/core';
+import { CloudDownload } from '@material-ui/icons';
+
 import React from 'react'
 import { Link } from 'react-router-dom';
 import useStyles from './styles';
@@ -18,15 +20,17 @@ const Navbar = (props) => {
           fontFamily: ["Open Sans", "sans-serif"].join(",")
         },
       });
+     
     return (
         <>
         <CssBaseline />
         <Slide appear={true} direction="down" in={!trigger}>
         <AppBar>
         <Toolbar className={classes.toolbar}>
-    {/* <Icon fontSize={'large'}>
-        <img src={"/images/portfolio.png"} height={35} width={35}/>
-    </Icon> */}
+
+
+  <Button className={classes.navButton} startIcon={<CloudDownload></CloudDownload>}variant='outlined'>Resume</Button>
+    
 
     <div className={classes.grow}></div> 
     <ThemeProvider theme={theme}> 
