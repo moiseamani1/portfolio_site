@@ -21,6 +21,16 @@ export default makeStyles((theme) => ({
     background : '#101010'
 
   },
+  toolbarMobile:{
+  
+    paddingRight: "79px",
+    paddingLeft: "2rem",
+    background : '#101010'
+
+  },
+  menuButton:{
+    color:"white"
+  },
   navButton:{
     background:"#DDB450",
     color:"white",
@@ -32,18 +42,21 @@ export default makeStyles((theme) => ({
   }
   ,
   nav_links:{
-    color:'white',
-    "&:hover": {
-        color: "#DDB450",
-        
-    },
     margin:'auto 1rem auto 1rem',
     "@media (max-width: 900px)": {
       margin:'auto 0rem auto 0rem',
     },
     alignItems: 'center',
     display: 'flex',
+    
+  },
+  nav_links_text:{
+    color:"white",
     textDecoration: 'none',
+    "&:hover": {
+      color: "#DDB450",
+      
+  }
   },
    nav_numbers:{
     color:"#DDB450"
@@ -54,6 +67,22 @@ export default makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
   },
+  mobileLinks:{
+    textDecoration: 'none',
+    color:"black",
+    width:"100%",
+    
+  },
+
+  // anchor:{
+  //   display: "block",
+  //   position: "relative",
+  //   top: "-5rem",
+  //   visibility: "hidden",
+  // },
+  mobileMenuItem:{
+    width:"100%"
+  }
 
  
  

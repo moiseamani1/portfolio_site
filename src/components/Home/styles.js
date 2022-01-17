@@ -11,15 +11,15 @@ export default makeStyles((theme) => ({
   },
   intro: {
     color: "white",
-    fontFamily: ["Roboto Condensed", "sans-serif"].join(","),
-    fontSize:"50pt",
-    fontWeight:"bold",
-    letterSpacing:"-30"
+    // fontFamily: ["Roboto Condensed", "sans-serif"].join(","),
+    // fontSize:"50pt",
+    // fontWeight:"bold",
+    // letterSpacing:"-30"
   },
   greeting: {
     color: "white",
-    fontFamily: ["Roboto Condensed", "sans-serif"].join(","),
-    fontSize:"20pt",
+  //   fontFamily: ["Roboto Condensed", "sans-serif"].join(","),
+  //   fontSize:"20pt",
   },
 
   contactButton:{
@@ -41,21 +41,30 @@ export default makeStyles((theme) => ({
   },
   center:{
     margin:"auto",
-    width:"max-content"
+    paddingRight:"4rem",
+    
 
   },
   introSection:{
-margin:"2.5rem"
+padding:"3rem"
   }
   ,
+  profileImage:{
+width:"100%",
+textAlign:"center"
+
+  },
   media:{
+    width: "100%",
+    height: "auto",
+    maxWidth:"25rem"
     
-      width: 400,
-      height: 400,
-      borderRadius: 400 / 2,
-      overflow: "hidden",
-      borderWidth:3,
-      borderColor: "red"
+      // width: 400,
+      // heigt:400,
+      // borderRadius: 400 / 2,
+      // overflow: "hidden",
+      // borderWidth:3,
+      // borderColor: "red"
     
 
      

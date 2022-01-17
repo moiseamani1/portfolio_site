@@ -7,14 +7,21 @@ export default makeStyles((theme) => ({
     marginBottom:"10rem"
       },
   title:{
-      color:"white"
+      color:"white",
+      padding:"2rem"
   },
   jobTitle:{
-    color:"white"
+    color:"white",
+    
+    
 },
   body: {
     color:"#BEBEBE",
-    width:"35rem"
+    width:"45rem",
+    "@media (max-width: 900px)": {
+      width:'auto',
+    },
+    
   },
   location:{
       color:"#DDB450"
@@ -29,6 +36,12 @@ export default makeStyles((theme) => ({
   },
   nav_numbers:{
     color:"#DDB450"
+   },
+   anchor:{
+    display: "block",
+    position: "relative",
+    top: "-5rem",
+    visibility: "hidden"
    }
   
 }));

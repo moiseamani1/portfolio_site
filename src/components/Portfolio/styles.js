@@ -8,7 +8,8 @@ export default makeStyles((theme) => ({
   }
   ,
   title:{
-    color:"white"
+    color:"white",
+    padding:"2rem"
 },
 otherTitle:{
   color:"white",
@@ -88,6 +89,12 @@ otherTitle:{
 
   techStackItem:{
     width:"max-content"
-  }
+  },
+  anchor:{
+    display: "block",
+    position: "relative",
+    top: "-5rem",
+    visibility: "hidden"
+   }
   
 }));

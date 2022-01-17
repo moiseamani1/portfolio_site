@@ -19,3 +19,7 @@ code {
 .main {
   background-image: linear-gradient(to right bottom, #121317, #424146);
 }
+
+html{
+  scroll-behavior: smooth;
+}

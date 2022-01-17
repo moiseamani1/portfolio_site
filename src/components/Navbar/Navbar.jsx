@@ -1,8 +1,9 @@
-import { createTheme, Icon, Toolbar, Typography,ThemeProvider, CssBaseline, Slide, AppBar, useScrollTrigger, Button, MuiThemeProvider } from '@material-ui/core';
-import { CloudDownload } from '@material-ui/icons';
+import {Link as Lk,MenuItem, createTheme, Icon, Toolbar, Typography,ThemeProvider, CssBaseline, Slide, AppBar, useScrollTrigger, Button, MuiThemeProvider, IconButton, Drawer } from '@material-ui/core';
+import { CloudDownload, PersonOutline,Menu } from '@material-ui/icons';
 
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react'
+import $ from 'jquery';
+
 import useStyles from './styles';
 const Navbar = (props) => {
     const classes=useStyles();
@@ -20,9 +21,114 @@ const Navbar = (props) => {
           fontFamily: ["Open Sans", "sans-serif"].join(",")
         },
       });
-     
-    return (
-        <>
+
+
+
+      const [state, setState] = useState({
+        mobileView: false,
+        drawerOpen: false
+      })
+    const { mobileView,drawerOpen  } = state;
+    const headersData = [
+      {
+        label: "About Me",
+        href: "#mobileAbout",
+      },
+      {
+        label: "Experience",
+        href: "#mobileExperience",
+      },
+      {
+        label: "Portfolio",
+        href: "#mobilePortfolio",
+      },
+      {
+        label: "Contact",
+        href: "#mobileContact",
+      },
+      
+    ];
+
+    useEffect(() => {
+      const setResponsiveness = () => {
+        return window.innerWidth < 900
+          ? setState((prevState) => ({ ...prevState, mobileView: true }))
+          : setState((prevState) => ({ ...prevState, mobileView: false }));
+      };
+      setResponsiveness();
+      window.addEventListener("resize", () => setResponsiveness());
+    }, []);
+
+   
+    const handleDrawerClick=(href)=>{
+      handleDrawerClose();
+      $('li.h5').find('a').click(function(){
+        // var $href = $(this).attr('href');
+        var $anchor = $(href).offset();
+        var number = $anchor.top;
+        window.scrollTo(0,-300);
+    
+       
+        return false;
+    }
+    
+    
+    );
+
+    
+   
+      
+      
+
+    }
+
+    const handleDrawerOpen = () =>
+    setState((prevState) => ({ ...prevState, drawerOpen: true }));
+
+    const handleDrawerClose = () =>
+  setState((prevState) => ({ ...prevState, drawerOpen: false }));
+
+
+    const getDrawerChoices = () => (
+
+      <>
+       {headersData.map(({ label, href }) =>(
+          // <Lk
+          //   {...{
+          //     component: Link,
+          //     to: href,
+          //     color: "inherit",
+          //     style: { textDecoration: "none" },
+          //     key: label,
+          //   }}
+          // >
+          //   <MenuItem>{label}</MenuItem>
+          // </Lk>
+// 
+<div onClick={()=>handleDrawerClick(href)} key={label}  >
+ <MenuItem className={classes.mobileMenuItem}><Typography variant='h5'>
+   <a className={classes.mobileLinks} href={href}>{label}</a></Typography></MenuItem>
+</div> 
+
+/* <div onClick={()=>handleDrawerClick(href)} key={label}  >
+  <MenuItem className={classes.mobileMenuItem}><Typography variant='h5'>
+    <sp></sp>{label}</Typography></MenuItem>
+</div> */
+
+
+        )
+        )
+        }
+   <MenuItem className={classes.mobileMenuItem}><Button startIcon={<CloudDownload></CloudDownload>}>Resume</Button></MenuItem>     
+        </>
+
+      
+      )
+   
+
+
+    const displayDesktop=()=>(
+    <>
         <CssBaseline />
         <Slide appear={true} direction="down" in={!trigger}>
         <AppBar>
@@ -34,18 +140,18 @@ const Navbar = (props) => {
 
     <div className={classes.grow}></div> 
     <ThemeProvider theme={theme}> 
-    <Typography variant="h6" className={classes.nav_links} color="inherit" component={Link} to="/about">
-    <span className={classes.nav_numbers}>&#8544;. </span>&nbsp; About Me
+    <Typography variant="h6" className={classes.nav_links} color="inherit" >
+   <a  className={classes.nav_links_text} href="#about"><span className={classes.nav_numbers}>&#8544;. </span>&nbsp; About Me</a> 
     </Typography>
-    <Typography variant="h6" className={classes.nav_links} color="inherit" component={Link} to="/portfolio">
-    <span className={classes.nav_numbers}>&#8545;. </span> &nbsp; Experience
+    <Typography variant="h6" className={classes.nav_links} color="inherit" >
+    <a  className={classes.nav_links_text} href="#experience"><span className={classes.nav_numbers}>&#8545;. </span> &nbsp; Experience</a>
     </Typography>
-    <Typography variant="h6" className={classes.nav_links} color="inherit" component={Link} to="/portfolio">
-    <span className={classes.nav_numbers}>&#8546;. </span> &nbsp; Portfolio
+    <Typography variant="h6" className={classes.nav_links} color="inherit" >
+    <a  className={classes.nav_links_text} href="#portfolio"><span className={classes.nav_numbers}>&#8546;. </span> &nbsp; Portfolio</a>
     </Typography>
 
-    <Typography  variant="h6" className={classes.nav_links} color="inherit" component={Link} to="/contact">
-   <span className={classes.nav_numbers}>&#8547;.</span> &nbsp; Contact
+    <Typography  variant="h6" className={classes.nav_links} color="inherit" >
+    <a className={classes.nav_links_text} href="#contact"><span className={classes.nav_numbers}>&#8547;.</span> &nbsp; Contact</a>
     </Typography>
     </ThemeProvider>
    
@@ -57,7 +163,58 @@ const Navbar = (props) => {
   
 
 
-</Toolbar></AppBar></Slide></>
+</Toolbar></AppBar></Slide></>)
+
+
+    const displayMobile = () => {
+      
+    
+
+
+    
+      return (
+        <AppBar position="fixed"  color="inherit">
+        <Toolbar className={classes.toolbarMobile}>
+          <IconButton
+            {...{
+              edge: "start",
+              className:classes.menuButton,
+              "aria-label": "menu",
+              "aria-haspopup": "true",
+              onClick: handleDrawerOpen
+            }
+          }
+          >
+            <Menu />
+          </IconButton>
+          <Drawer
+        {...{
+          anchor: "top",
+          open: drawerOpen,
+          onClose: handleDrawerClose,
+        }}
+      >
+        <div className={classes.drawerContainer}>{getDrawerChoices()}</div>
+      </Drawer>
+
+
+          
+   <Typography variant='h4' style={{color:"white"}}>M.A.</Typography>
+   
+
+
+  <div className={classes.grow}></div>
+
+
+  </Toolbar>
+  </AppBar>
+      );
+    
+}
+     
+    return (
+      <>{mobileView ? displayMobile() : displayDesktop()}</>
+   
     )
 }
 

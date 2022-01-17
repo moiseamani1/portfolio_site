@@ -1,4 +1,4 @@
-import { Fade, Box, Button, Card, CardActions, CardContent, CardMedia, Grid, Paper, Typography, List, ListItem, ListItemText } from '@material-ui/core'
+import { Fade, Box, Button, Card, CardActions, CardContent, CardMedia, Grid, ThemeProvider, Typography, List, ListItem, ListItemText, responsiveFontSizes, createTheme } from '@material-ui/core'
 import { GitHub, Link } from '@material-ui/icons';
 import { styled } from '@material-ui/styles';
 import React, { useEffect, useState } from 'react';
@@ -40,7 +40,7 @@ const Portfolio = () => {
   const projects = [{
     "id": 0,
     "title": "Sentence Grouper",
-    "description": "NLP tool used for this this and that. with all of these great features",
+    "description": "An application of Natural Language Processing. This simple web app groups semantically similar sentences using cosine similarity.",
     "img": "/images/projects/sentence_grouper.jpg",
     "github": "https://github.com/moiseamani1/sentence-grouper",
     "link": "http://www.sentencegrouper.ca",
@@ -49,15 +49,17 @@ const Portfolio = () => {
   {
     "id": 1,
     "title": "Inovision",
-    "description": "NLP tool used for this this and that. with all of these great features",
+    "description": `A home security system which consists of an Android application and a Raspberry Pi.
+     I solely built the Android application and made a good contribution to the Python logic. The project makes use of Open CV for facial recognition and Google-Text-to-Speech for 
+     announcements.`,
     "img": "/images/projects/Inovision.jpg",
     "github": "https://github.com/moiseamani1/Inovision_Android_App",
-    "stack": ["Java", "Python","Firebase"]
+    "stack": ["Java", "Python","Firebase","Linux"]
 
   },
   {
     "id": 2, "title": "Essence",
-    "description": "NLP tool used for this this and that. with all of these great features",
+    "description": "A demo E-commerce website for selling bags and accessories. Seamlessly integrates Styled Components and various payment APIs.",
     "img": "/images/projects/Essence.jpg",
     "github": "https://github.com/moiseamani1/react_store_pg",
     "stack": ["ReactJs", "Material UI", "CommerceJs", "Mailchimp API", "Square API"]
@@ -65,7 +67,7 @@ const Portfolio = () => {
   },
   {
     "id": 3, "title": "Pupson's Bay",
-    "description": "NLP tool used for this this and that. with all of these great features",
+    "description": "A demo E-commerce website for selling dog clothing. The project is built using the popular MERN stack.",
     "img": "/images/projects/pupson.jpg",
     "github": "https://github.com/moiseamani1/react_e-commerce_website",
     "stack": ["MongoDB", "Express", "ReactJs", "NodeJs",
@@ -89,9 +91,13 @@ const Portfolio = () => {
   let [active, setActive] = useState(false);
 
   let [activeProject, setActiveProject] = useState([])
-
+  let theme = createTheme();
+  theme = responsiveFontSizes(theme);
+// TODO fix to partial visibility 
   return (
-    <div className={classes.content}>
+    <>
+    <a class={classes.anchor} id="mobilePortfolio"></a>
+    <div className={classes.content} id={"portfolio"}>
       {/* <div className={classes.titleDiv}></div> */}
 
       <VizSensor
@@ -105,8 +111,10 @@ const Portfolio = () => {
         <Fade in={active} timeout={2000}>
 
           <Grid container justify="center">
-            <Grid item xs={12} sm={12} md={6} lg={6}>
+            <Grid item xs={12} sm={12} md={8} lg={6}>
+            <ThemeProvider theme={theme}>
               <Typography className={classes.title} variant="h2" gutterBottom><span className={classes.nav_numbers}>&#8546;. </span> Portfolio</Typography>
+           </ThemeProvider>
             </Grid>
           </Grid>
         </Fade>
@@ -115,7 +123,7 @@ const Portfolio = () => {
 
 
 
-
+      <ThemeProvider theme={theme}>
       <Grid container justifyContent='center'>
         <Grid item xs={12} sm={12} md={8} lg={8}>
 
@@ -139,7 +147,7 @@ const Portfolio = () => {
                 <Grid container className={classes.projectCard}>
                   <Grid item className={classes.projectCardContent} xs={12} sm={12} md={12} lg={7}>
                     <Typography className={classes.projectName} variant="h3" gutterBottom>{item.title}</Typography>
-                    <Typography className={classes.body} variant="body" gutterBottom>{item.description}</Typography>
+                    <Typography className={classes.body} variant="body1" gutterBottom>{item.description}</Typography>
 
                     
 
@@ -198,10 +206,10 @@ const Portfolio = () => {
                 image="/images/folder.png"
                 alt="project screenshot"
               />
-              <Typography color="text.secondary" gutterBottom>
+              <Typography variant="h6"  gutterBottom>
                 {item.title}
               </Typography>
-              <Typography variant="h5" component="div">
+              <Typography variant="body1" component="div">
                 {item.description}
               </Typography>
 
@@ -219,7 +227,7 @@ const Portfolio = () => {
         </Grid>))}
 
       </Grid>
-
+      </ThemeProvider>
 
 
 
@@ -244,7 +252,7 @@ const Portfolio = () => {
 </Grid>
 </Grid> */}
 
-    </div>
+    </div></>
   )
 }
 
