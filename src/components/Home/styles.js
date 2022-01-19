@@ -57,7 +57,7 @@ textAlign:"center"
   media:{
     width: "100%",
     height: "auto",
-    maxWidth:"25rem",
+    maxWidth:"20rem",
     padding:"0.5rem"
     
       // width: 400,
