@@ -8,7 +8,7 @@ import Experience from './components/Experience/Experience';
 import Portfolio from './components/Portfolio/Portfolio';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core';
 
-const theme = createTheme({
+let theme = createTheme({
   typography: {
     fontFamily: [
       'Open Sans',
