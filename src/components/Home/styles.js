@@ -57,7 +57,10 @@ textAlign:"center"
   media:{
     width: "100%",
     height: "auto",
-    maxWidth:"20rem",
+    maxWidth:"25rem",
+    "@media (max-width: 900px)": {
+      width:'90vw',
+    },
     padding:"0.5rem"
     
       // width: 400,
