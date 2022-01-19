@@ -1,6 +1,6 @@
 import React from 'react'
 import useStyles from './styles';
-import { Button, CardMedia, createTheme, Grid, responsiveFontSizes, ThemeProvider, Typography} from '@material-ui/core'
+import { Grid, Typography} from '@material-ui/core'
 import { Email, GitHub, LinkedIn } from '@material-ui/icons';
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
           <p>
           <Typography variant="h5"><span className={classes.greeting}>HI, I'M MOISE.<br/></span></Typography>
         <Typography variant="h4"><span className={classes.intro}>I'm a bilingual (en/fr) Computer Engineer that graduated from UOttawa.
-        I have 7+ years of software development experience. I'm currently working for <a href='https://www.canada.ca/en/immigration-refugees-citizenship.html' target="_blank" className={classes.location}>IRCC.</a>
+        I have 7+ years of software development experience. I'm currently working for <a href='https://www.canada.ca/en/immigration-refugees-citizenship.html' target="_blank" className={classes.location} rel="noreferrer">IRCC.</a>
         </span>
        </Typography>
          </p>  
@@ -44,9 +44,9 @@ const Home = () => {
     
         <Grid container justify="center" >
         <div className={classes.social}>
-        <a href='https://www.linkedin.com/in/moise-amani/' target="_blank"><LinkedIn></LinkedIn></a>
-        <a href='https://github.com/moiseamani1' target="_blank"><GitHub></GitHub></a>
-        <a href='mailto:moise.amani@gmail.com' target="_blank"><Email></Email></a> 
+        <a href='https://www.linkedin.com/in/moise-amani/' target="_blank" rel="noreferrer"><LinkedIn></LinkedIn></a>
+        <a href='https://github.com/moiseamani1' target="_blank" rel="noreferrer"><GitHub></GitHub></a>
+        <a href='mailto:moise.amani@gmail.com' target="_blank" rel="noreferrer"><Email></Email></a> 
         </div>
         
        

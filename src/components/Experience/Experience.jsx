@@ -1,8 +1,7 @@
-import { Box, createTheme, Fade, Grid, responsiveFontSizes, Tab, Tabs, Typography,ThemeProvider, ListItemText } from '@material-ui/core'
+import { Box, Fade, Grid, Tab, Tabs, Typography } from '@material-ui/core'
 import { styled } from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react'
-// import * as React from 'react';
 import useStyles from './styles';
 import VizSensor from 'react-visibility-sensor';
 
@@ -170,7 +169,7 @@ partialVisibility
       <TabPanel value={value} index={0}>
 
       <div className={classes.body}>
-      <Typography variant='subtitle1' className={classes.jobTitle}>Application Programmer/Analyst <a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank" className={classes.location}>@IMMIGRATION, REFUGEES AND CITIZENSHIP CANADA</a></Typography>
+      <Typography variant='subtitle1' className={classes.jobTitle}>Application Programmer/Analyst <a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank" className={classes.location} rel="noreferrer">@IMMIGRATION, REFUGEES AND CITIZENSHIP CANADA</a></Typography>
             <Typography variant='subtitle2'>September 2021 - Present | Ottawa, ON</Typography>
             <ul>
             <li><Typography variant='body1'>Planned, tracked progress and collaborated on projects using Azure DevOps</Typography></li>
@@ -183,14 +182,14 @@ partialVisibility
 
       <TabPanel value={value} index={1}>
       <div className={classes.body}>
-      <Typography variant='subtitle1' className={classes.jobTitle}>Programmer <a  href='https://www.cbsa-asfc.gc.ca/menu-eng.html' target={"_blank"} className={classes.location}>@CANADA BORDER SERVICES AGENCY</a></Typography>
+      <Typography variant='subtitle1' className={classes.jobTitle}>Programmer <a  href='https://www.cbsa-asfc.gc.ca/menu-eng.html' target={"_blank"} className={classes.location} rel="noreferrer">@CANADA BORDER SERVICES AGENCY</a></Typography>
             <Typography variant='subtitle2'>May 2020 - September 2021 | Ottawa, ON</Typography>
             <ul>
             <li><Typography variant='body1'>Supported and tested Java EE postal web application</Typography></li>
 <li><Typography variant='body1'>Ran SQL queries to update our databases across different environments</Typography></li>
 <li><Typography variant='body1'>Implemented new application features based on client’s requirements using SDLC</Typography></li>
             </ul>
-            <Typography variant='subtitle1' className={classes.jobTitle}>Junior Programmer &#40;Co-op&#41; <a href='https://www.cbsa-asfc.gc.ca/menu-eng.html' target={"_blank"} className={classes.location}>@CANADA BORDER SERVICES AGENCY</a></Typography>
+            <Typography variant='subtitle1' className={classes.jobTitle}>Junior Programmer &#40;Co-op&#41; <a href='https://www.cbsa-asfc.gc.ca/menu-eng.html' target={"_blank"} className={classes.location} rel="noreferrer">@CANADA BORDER SERVICES AGENCY</a></Typography>
             <Typography variant='subtitle2'>September 2019 – December 2019 | Ottawa, ON</Typography>
             <ul>
             <li><Typography variant='body1'> Developed, tested and implemented new UI application features for our team’s testing tools</Typography></li>
@@ -202,7 +201,7 @@ partialVisibility
 
       <TabPanel value={value} index={2}>
       <div className={classes.body}>
-      <Typography variant='subtitle1' className={classes.jobTitle}>Software Quality Assurance Analyst &#40;Co-op&#41; <a href='https://www.international.gc.ca/global-affairs-affaires-mondiales/home-accueil.aspx?lang=eng' target="_blank" className={classes.location}>@GLOBAL AFFAIRS CANADA</a></Typography>
+      <Typography variant='subtitle1' className={classes.jobTitle}>Software Quality Assurance Analyst &#40;Co-op&#41; <a href='https://www.international.gc.ca/global-affairs-affaires-mondiales/home-accueil.aspx?lang=eng' target="_blank" className={classes.location} rel="noreferrer">@GLOBAL AFFAIRS CANADA</a></Typography>
             <Typography variant='subtitle2'>January 2019 – August 2019 | Gatineau, QC</Typography>
             <ul>
             <li><Typography variant='body1'>Reviewed, analyzed and created test cases for end-to-end testing</Typography></li>
@@ -218,7 +217,7 @@ partialVisibility
 
       <TabPanel value={value} index={3}>
       <div className={classes.body}>
-      <Typography variant='subtitle1' className={classes.jobTitle}>Open Government Project Officer &#40;Co-op&#41; <a href='https://www.canada.ca/en/treasury-board-secretariat.html' target={"_blank"} className={classes.location}>@TREASURY BOARD OF CANADA SECRETARIAT</a></Typography>
+      <Typography variant='subtitle1' className={classes.jobTitle}>Open Government Project Officer &#40;Co-op&#41; <a href='https://www.canada.ca/en/treasury-board-secretariat.html' target={"_blank"} className={classes.location} rel="noreferrer">@TREASURY BOARD OF CANADA SECRETARIAT</a></Typography>
             <Typography variant='subtitle2'>May 2018 – August 2018 | Ottawa, ON</Typography>
             <ul>
                 <li><Typography variant='body1'>Researched on data visualization tools such as Plotly and RawGraphs</Typography></li>
@@ -232,7 +231,7 @@ partialVisibility
 
       <TabPanel value={value} index={4}>
       <div className={classes.body}>
-      <Typography variant='subtitle1' className={classes.jobTitle}>Airbnb Host <a href='https://www.airbnb.ca/' target={"_blank"} className={classes.location}>@AIRBNB</a></Typography>
+      <Typography variant='subtitle1' className={classes.jobTitle}>Airbnb Host <a href='https://www.airbnb.ca/' target={"_blank"} className={classes.location} rel="noreferrer">@AIRBNB</a></Typography>
             <Typography variant='subtitle2'>August 2016 – Present | Ottawa, ON</Typography>
             <ul>
                 <li><Typography variant='body1'>Ensured that guests were satisfied with their stay by encouraging feedback and integrating comments</Typography></li>

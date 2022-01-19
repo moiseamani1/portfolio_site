@@ -1,5 +1,5 @@
-import { createTheme, Fade, Grid, responsiveFontSizes, ThemeProvider, Typography } from '@material-ui/core'
-import React, { useRef, useState } from 'react'
+import { Fade, Grid, Typography } from '@material-ui/core'
+import React, { useState } from 'react'
 import useStyles from './styles';
 import VizSensor from 'react-visibility-sensor';
 

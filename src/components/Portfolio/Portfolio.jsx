@@ -1,7 +1,7 @@
-import { Fade, Box, Button, Card, CardActions, CardContent, CardMedia, Grid, ThemeProvider, Typography, List, ListItem, ListItemText, responsiveFontSizes, createTheme } from '@material-ui/core'
+import { Fade, Button, Card, CardActions, CardContent, CardMedia, Grid, Typography, List, ListItem, ListItemText, responsiveFontSizes, createTheme } from '@material-ui/core'
 import { GitHub, Link } from '@material-ui/icons';
 import { styled } from '@material-ui/styles';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import useStyles from './styles';
 import VizSensor from 'react-visibility-sensor';
 

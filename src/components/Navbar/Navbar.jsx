@@ -1,7 +1,7 @@
-import {Link as Lk,MenuItem, createTheme, Icon, Toolbar, Typography,ThemeProvider, CssBaseline, Slide, AppBar, useScrollTrigger, Button, MuiThemeProvider, IconButton, Drawer } from '@material-ui/core';
-import { CloudDownload, PersonOutline,Menu } from '@material-ui/icons';
+import {MenuItem, Toolbar, Typography,CssBaseline, Slide, AppBar, useScrollTrigger, Button, IconButton, Drawer } from '@material-ui/core';
+import { CloudDownload, Menu } from '@material-ui/icons';
 
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import $ from 'jquery';
 
 import useStyles from './styles';

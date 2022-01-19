@@ -1,4 +1,4 @@
-import { Button, createTheme, Grid, responsiveFontSizes, Typography,ThemeProvider } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 import { GitHub, LinkedIn, MailOutlined } from '@material-ui/icons';
 import React from 'react'
 import useStyles from './styles';
