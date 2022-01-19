@@ -93,14 +93,15 @@ const Portfolio = () => {
   let [activeProject, setActiveProject] = useState([])
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
-// TODO fix to partial visibility 
+ 
   return (
     <>
     <a class={classes.anchor} id="mobilePortfolio"></a>
     <div className={classes.content} id={"portfolio"}>
-      {/* <div className={classes.titleDiv}></div> */}
+   
 
       <VizSensor
+      partialVisibility
         onChange={(isVisible) => {
           if (isVisible) {
             setActive(isVisible);
@@ -112,9 +113,9 @@ const Portfolio = () => {
 
           <Grid container justify="center">
             <Grid item xs={12} sm={12} md={8} lg={6}>
-            <ThemeProvider theme={theme}>
+      
               <Typography className={classes.title} variant="h2" gutterBottom><span className={classes.nav_numbers}>&#8546;. </span> Portfolio</Typography>
-           </ThemeProvider>
+         
             </Grid>
           </Grid>
         </Fade>
@@ -123,13 +124,14 @@ const Portfolio = () => {
 
 
 
-      <ThemeProvider theme={theme}>
+   
       <Grid container justifyContent='center'>
         <Grid item xs={12} sm={12} md={8} lg={8}>
 
           {projects.map((item, val) => (
 
             <VizSensor
+            partialVisibility
               onChange={(isVisible) => {
                 if (isVisible) {
                   setActiveProject(prevArray => {
@@ -227,7 +229,7 @@ const Portfolio = () => {
         </Grid>))}
 
       </Grid>
-      </ThemeProvider>
+   
 
 
 
@@ -243,14 +245,6 @@ const Portfolio = () => {
 
 
 
-
-      {/* <Grid container  spacing={4}>
-<Grid item xs={12} sm={12} md={6} lg={6}>
-
-
-
-</Grid>
-</Grid> */}
 
     </div></>
   )

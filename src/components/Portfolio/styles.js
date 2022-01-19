@@ -44,7 +44,7 @@ otherTitle:{
   },
   projectCardContent: {
     padding: '2rem',
-    height: "30rem"
+    minHeight: "30rem"
   },
   projectName: {
     color: "#BEBEBE"

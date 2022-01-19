@@ -26,7 +26,7 @@ export default makeStyles((theme) => ({
    },
    content:{
     minHeight:"40vh",
-    paddingBottom:"10rem"
+    paddingBottom:"2rem"
    
       },
     contactsItems:{
@@ -38,6 +38,14 @@ export default makeStyles((theme) => ({
       position: "relative",
       top: "-5rem",
       visibility: "hidden"
+     },
+     designedBy:{
+       color:"#DDB450",
+       textDecoration:"inherit"
+     },
+     designedCreds:{
+       marginTop:"5rem",
+
      } 
   
 }));

@@ -24,7 +24,8 @@ export default makeStyles((theme) => ({
     
   },
   location:{
-      color:"#DDB450"
+      color:"#DDB450",
+      textDecoration:"none"
   }
   ,
   list:{

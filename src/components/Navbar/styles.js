@@ -82,6 +82,11 @@ export default makeStyles((theme) => ({
   // },
   mobileMenuItem:{
     width:"100%"
+  },
+
+  resumeLink:{
+    textDecoration:"none",
+    color:"inherit"
   }
 
  

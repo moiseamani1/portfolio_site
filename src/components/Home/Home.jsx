@@ -5,8 +5,7 @@ import { Email, GitHub, LinkedIn } from '@material-ui/icons';
 
 const Home = () => {
     const classes=useStyles();
-    let theme = createTheme();
-    theme = responsiveFontSizes(theme);
+
 
 
 
@@ -18,13 +17,15 @@ const Home = () => {
         <Grid item xs={12} sm={12} md={8} lg={6}>
 
         <div className={classes.introSection}>  
-        <ThemeProvider theme={theme}>
+        
           <p>
           <Typography variant="h5"><span className={classes.greeting}>HI, I'M MOISE.<br/></span></Typography>
-        <Typography variant="h4"><span className={classes.intro}>I'm a bilingual UOttawa computer engineer currently working as an Application Programmer at IRCC. I focus on producing clean code taking into account time and space complexities. </span>
+        <Typography variant="h4"><span className={classes.intro}>I'm a bilingual (en/fr) Computer Engineer that graduated from UOttawa.
+        I have 7+ years of software development experience. I'm currently working for <a href='https://www.canada.ca/en/immigration-refugees-citizenship.html' target="_blank" className={classes.location}>IRCC.</a>
+        </span>
        </Typography>
          </p>  
-        </ThemeProvider>  
+        
         
         </div>
     <div>
@@ -43,9 +44,9 @@ const Home = () => {
     
         <Grid container justify="center" >
         <div className={classes.social}>
-        <LinkedIn></LinkedIn>
-        <GitHub></GitHub>
-        <Email></Email> 
+        <a href='https://www.linkedin.com/in/moise-amani/' target="_blank"><LinkedIn></LinkedIn></a>
+        <a href='https://github.com/moiseamani1' target="_blank"><GitHub></GitHub></a>
+        <a href='mailto:moise.amani@gmail.com' target="_blank"><Email></Email></a> 
         </div>
         
        

@@ -7,12 +7,28 @@ import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
 import Portfolio from './components/Portfolio/Portfolio';
-import Sections from './components/Sections/Sections';
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Open Sans',
+       'Roboto',
+       'Arial',
+       'sans-serif'
+    ]
+    .join(','),
+  }
+});
+
+theme = responsiveFontSizes(theme);
+
 
 function App() {
   
   return (
-    <Router>
+    <ThemeProvider theme={theme}>
+      <Router>
       <Navbar></Navbar>
       <Switch>
         <Route exact path="/">
@@ -23,28 +39,12 @@ function App() {
           <Portfolio></Portfolio>
           <Contact></Contact>
           </div>
-         
         </Route>
-
-        {/* <Route exact path="/about">
-          <About></About>
-        </Route>
-
-        <Route exact path="/portfolio">
-          <Portfolio></Portfolio>
-        </Route>
-
-        <Route exact path="/contact">
-          <Contact></Contact>
-        </Route> */}
-
-
-
-
-
       </Switch>
 
     </Router>
+    </ThemeProvider>
+    
   );
 }
 

@@ -41,7 +41,7 @@ export default makeStyles((theme) => ({
   },
   center:{
     margin:"auto",
-    paddingRight:"4rem",
+   // paddingRight:"4rem",
     
 
   },
@@ -57,7 +57,8 @@ textAlign:"center"
   media:{
     width: "100%",
     height: "auto",
-    maxWidth:"25rem"
+    maxWidth:"25rem",
+    padding:"0.5rem"
     
       // width: 400,
       // heigt:400,
@@ -81,8 +82,14 @@ textAlign:"center"
     '& svg': {
         fontSize: 50
       },
-    color:"#DDB450",
-    marginTop:"1rem"
     
-  }
+    marginTop:"1rem",
+    "& a":{
+      color:"#DDB450",
+    }
+    
+  },
+  location:{
+    color:"#DDB450"
+}
 }));

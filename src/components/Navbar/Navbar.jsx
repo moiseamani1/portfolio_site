@@ -13,14 +13,7 @@ const Navbar = (props) => {
         target: props.window ? window() : undefined
       });
    
-    const theme = createTheme({
-        typography: {
-          // In Chinese and Japanese the characters are usually larger,
-          // so a smaller fontsize may be appropriate.
-          
-          fontFamily: ["Open Sans", "sans-serif"].join(",")
-        },
-      });
+    
 
 
 
@@ -93,33 +86,25 @@ const Navbar = (props) => {
 
       <>
        {headersData.map(({ label, href }) =>(
-          // <Lk
-          //   {...{
-          //     component: Link,
-          //     to: href,
-          //     color: "inherit",
-          //     style: { textDecoration: "none" },
-          //     key: label,
-          //   }}
-          // >
-          //   <MenuItem>{label}</MenuItem>
-          // </Lk>
-// 
+         
+
 <div onClick={()=>handleDrawerClick(href)} key={label}  >
  <MenuItem className={classes.mobileMenuItem}><Typography variant='h5'>
    <a className={classes.mobileLinks} href={href}>{label}</a></Typography></MenuItem>
 </div> 
 
-/* <div onClick={()=>handleDrawerClick(href)} key={label}  >
-  <MenuItem className={classes.mobileMenuItem}><Typography variant='h5'>
-    <sp></sp>{label}</Typography></MenuItem>
-</div> */
 
 
         )
         )
         }
-   <MenuItem className={classes.mobileMenuItem}><Button startIcon={<CloudDownload></CloudDownload>}>Resume</Button></MenuItem>     
+   <MenuItem className={classes.mobileMenuItem}><Button startIcon={<CloudDownload></CloudDownload>}><a
+ href={process.env.PUBLIC_URL + "resume/CV__Nov2021.pdf"}
+ download={"Moise Resume.pdf"}
+ className={classes.resumeLink}
+>
+   Resume
+</a></Button></MenuItem>     
         </>
 
       
@@ -135,11 +120,17 @@ const Navbar = (props) => {
         <Toolbar className={classes.toolbar}>
 
 
-  <Button className={classes.navButton} startIcon={<CloudDownload></CloudDownload>}variant='outlined'>Resume</Button>
+  <Button className={classes.navButton} startIcon={<CloudDownload></CloudDownload>}variant='outlined'><a 
+  className={classes.resumeLink}
+  href={process.env.PUBLIC_URL + "resume/CV__Nov2021.pdf"}
+  download={"Moise Resume.pdf"}
+>
+    Resume
+</a></Button>
     
 
     <div className={classes.grow}></div> 
-    <ThemeProvider theme={theme}> 
+   
     <Typography variant="h6" className={classes.nav_links} color="inherit" >
    <a  className={classes.nav_links_text} href="#about"><span className={classes.nav_numbers}>&#8544;. </span>&nbsp; About Me</a> 
     </Typography>
@@ -153,7 +144,7 @@ const Navbar = (props) => {
     <Typography  variant="h6" className={classes.nav_links} color="inherit" >
     <a className={classes.nav_links_text} href="#contact"><span className={classes.nav_numbers}>&#8547;.</span> &nbsp; Contact</a>
     </Typography>
-    </ThemeProvider>
+
    
     
 
