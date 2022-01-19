@@ -59,7 +59,7 @@ textAlign:"center"
     height: "auto",
     maxWidth:"25rem",
     "@media (max-width: 900px)": {
-      width:'90vw',
+      maxWidth:'90vw',
     },
     padding:"0.5rem"
     
