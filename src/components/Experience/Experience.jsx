@@ -169,11 +169,13 @@ partialVisibility
       <TabPanel value={value} index={0}>
 
       <div className={classes.body}>
-      <Typography variant='subtitle1' className={classes.jobTitle}>Application Programmer/Analyst <a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank" className={classes.location} rel="noreferrer">@IMMIGRATION, REFUGEES AND CITIZENSHIP CANADA</a></Typography>
+      <Typography variant='subtitle1' className={classes.jobTitle}>Application Programmer <a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank" className={classes.location} rel="noreferrer">@IMMIGRATION, REFUGEES AND CITIZENSHIP CANADA</a></Typography>
             <Typography variant='subtitle2'>September 2021 - Present | Ottawa, ON</Typography>
             <ul>
+            <li><Typography variant='body1'>Designed and implemented SQL queries for the execution of client data extracts</Typography></li>
+            <li><Typography variant='body1'>Gathered impact assessments from team leads and produced costings for change requests submitted by our clients</Typography></li>
             <li><Typography variant='body1'>Planned, tracked progress and collaborated on projects using Azure DevOps</Typography></li>
-            <li><Typography variant='body1'>Extracted and summarized requirements from change requests as part of our impact assessment and costing process</Typography></li>
+            <li><Typography variant='body1'>Interviewed, trained and evaluated junior ETL developers</Typography></li>     
             </ul>
         </div>
       </TabPanel>
@@ -193,7 +195,7 @@ partialVisibility
             <Typography variant='subtitle2'>September 2019 – December 2019 | Ottawa, ON</Typography>
             <ul>
             <li><Typography variant='body1'> Developed, tested and implemented new UI application features for our team’s testing tools</Typography></li>
-<li><Typography variant='body1'>Applied working knowledge of object-oriented programming to debug Java source code</Typography></li>
+<li><Typography variant='body1'>Applied knowledge of object-oriented programming to debug Java repositories</Typography></li>
             </ul>
 </div>
       </TabPanel>

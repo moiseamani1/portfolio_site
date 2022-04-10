@@ -99,7 +99,7 @@ const Navbar = (props) => {
         )
         }
    <MenuItem className={classes.mobileMenuItem}><Button startIcon={<CloudDownload></CloudDownload>}><a
- href={process.env.PUBLIC_URL + "resume/CV__Nov2021.pdf"}
+ href={process.env.PUBLIC_URL + "resume/CV__Spring2022.pdf"}
  download={"Moise Resume.pdf"}
  className={classes.resumeLink}
 >
@@ -122,7 +122,7 @@ const Navbar = (props) => {
 
   <Button className={classes.navButton} startIcon={<CloudDownload></CloudDownload>}variant='outlined'><a 
   className={classes.resumeLink}
-  href={process.env.PUBLIC_URL + "resume/CV__Nov2021.pdf"}
+  href={process.env.PUBLIC_URL + "resume/CV__Spring2022.pdf"}
   download={"Moise Resume.pdf"}
 >
     Resume
