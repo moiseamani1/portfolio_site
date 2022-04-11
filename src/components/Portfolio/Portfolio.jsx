@@ -75,11 +75,11 @@ const Portfolio = () => {
 
   },
   {
-    "id": 4, "title": "YumsByA - Order and Receipt Generator",
-    "description": "A web tool created to assist with the creation of orders and receipts for, the food business,Yums by A. ",
+    "id": 4, "title": "Order and Receipt Generator",
+    "description": "A web tool implemented to assist with creating orders and receipts for, Ottawa-based Instagram food business, Yums By A.",
     "img": "/images/projects/yums.jpg",
     "github": "https://github.com/moiseamani1/yums_order_receipt_generator",
-    "stack": ["Sheets API", "Netlify", "ReactJs", "NodeJs",
+    "stack": ["Sheets API", "Netlify", "ReactJs", "NodeJs","Firebase",
       "Material UI","React-pdf"]
 
   }
