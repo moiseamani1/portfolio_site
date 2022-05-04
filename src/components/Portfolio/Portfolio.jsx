@@ -48,6 +48,15 @@ const Portfolio = () => {
   },
   {
     "id": 1,
+    "title": "Essence",
+    "description": "A demo E-commerce website for selling bags and accessories. Seamlessly integrates Styled Components and various payment APIs.",
+    "img": "/images/projects/Essence.jpg",
+    "github": "https://github.com/moiseamani1/react_store_pg",
+    "link":"https://essence-shop.netlify.app/",
+    "stack": ["ReactJs", "Material UI", "CommerceJs", "Mailchimp API", "Square API"]
+  },
+  {
+    "id": 2, 
     "title": "Inovision",
     "description": `A home security system which consists of an Android application and a Raspberry Pi.
      I solely built the Android application and made a good contribution to the Python logic. The project makes use of Open CV for facial recognition and Google-Text-to-Speech for 
@@ -55,15 +64,6 @@ const Portfolio = () => {
     "img": "/images/projects/Inovision.jpg",
     "github": "https://github.com/moiseamani1/Inovision_Android_App",
     "stack": ["Java", "Python","Firebase","Linux"]
-
-  },
-  {
-    "id": 2, "title": "Essence",
-    "description": "A demo E-commerce website for selling bags and accessories. Seamlessly integrates Styled Components and various payment APIs.",
-    "img": "/images/projects/Essence.jpg",
-    "github": "https://github.com/moiseamani1/react_store_pg",
-    "stack": ["ReactJs", "Material UI", "CommerceJs", "Mailchimp API", "Square API"]
-
   },
   {
     "id": 3, "title": "Pupson's Bay",
