@@ -33,6 +33,12 @@ const Portfolio = () => {
     "github": "https://github.com/moiseamani1/ml-sandbox",
 
   },
+  {
+    "title": "Web Scraper",
+    "description": "Python website scraping script to conduct market research and analyze automobile industry trends.",
+    "github": "https://github.com/moiseamani1/web-scraper",
+
+  },
 
   ]
 
