@@ -172,10 +172,10 @@ partialVisibility
       <Typography variant='subtitle1' className={classes.jobTitle}>Application Programmer <a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank" className={classes.location} rel="noreferrer">@IMMIGRATION, REFUGEES AND CITIZENSHIP CANADA</a></Typography>
             <Typography variant='subtitle2'>September 2021 - Present | Ottawa, ON</Typography>
             <ul>
-            <li><Typography variant='body1'>Designed and implemented SQL queries for the execution of client data extracts</Typography></li>
-            <li><Typography variant='body1'>Gathered impact assessments from team leads and produced costings for change requests submitted by our clients</Typography></li>
-            <li><Typography variant='body1'>Planned, tracked progress and collaborated on projects using Azure DevOps</Typography></li>
-            <li><Typography variant='body1'>Interviewed, trained and evaluated junior ETL developers</Typography></li>     
+            <li><Typography variant='body1'>Designed and implemented 30+ SQL queries for the execution of client data extract requests</Typography></li>
+            <li><Typography variant='body1'>Gathered 15+ impact assessments from team leads and produced costings for change requests submitted by our clients</Typography></li>
+            <li><Typography variant='body1'>Planned, tracked progress and collaborated on 2 projects using Azure DevOps</Typography></li>
+            <li><Typography variant='body1'>Interviewed, trained and evaluated 10+ junior ETL developers</Typography></li>     
             </ul>
         </div>
       </TabPanel>
@@ -188,14 +188,14 @@ partialVisibility
             <Typography variant='subtitle2'>May 2020 - September 2021 | Ottawa, ON</Typography>
             <ul>
             <li><Typography variant='body1'>Supported and tested Java EE postal web application</Typography></li>
-<li><Typography variant='body1'>Ran SQL queries to update our databases across different environments</Typography></li>
-<li><Typography variant='body1'>Implemented new application features based on client’s requirements using SDLC</Typography></li>
+<li><Typography variant='body1'>Ran SQL scripts to update our databases across different environments</Typography></li>
+<li><Typography variant='body1'>Integrated UTF-8 encoding into our form logic to include Chinese characters</Typography></li>
             </ul>
             <Typography variant='subtitle1' className={classes.jobTitle}>Junior Programmer &#40;Co-op&#41; <a href='https://www.cbsa-asfc.gc.ca/menu-eng.html' target={"_blank"} className={classes.location} rel="noreferrer">@CANADA BORDER SERVICES AGENCY</a></Typography>
             <Typography variant='subtitle2'>September 2019 – December 2019 | Ottawa, ON</Typography>
             <ul>
-            <li><Typography variant='body1'> Developed, tested and implemented new UI application features for our team’s testing tools</Typography></li>
 <li><Typography variant='body1'>Applied knowledge of object-oriented programming to debug Java repositories</Typography></li>
+            <li><Typography variant='body1'>Improved the UI and UX of our message queue testing tool by making it more WCAG2 compliant</Typography></li>
             </ul>
 </div>
       </TabPanel>
@@ -206,8 +206,8 @@ partialVisibility
       <Typography variant='subtitle1' className={classes.jobTitle}>Software Quality Assurance Analyst &#40;Co-op&#41; <a href='https://www.international.gc.ca/global-affairs-affaires-mondiales/home-accueil.aspx?lang=eng' target="_blank" className={classes.location} rel="noreferrer">@GLOBAL AFFAIRS CANADA</a></Typography>
             <Typography variant='subtitle2'>January 2019 – August 2019 | Gatineau, QC</Typography>
             <ul>
-            <li><Typography variant='body1'>Reviewed, analyzed and created test cases for end-to-end testing</Typography></li>
-<li><Typography variant='body1'>Identified automatable business processes and implemented their corresponding test scripts in Eclipse</Typography></li>
+            <li><Typography variant='body1'>Reviewed, analyzed and created 20+ test cases for end-to-end testing</Typography></li>
+<li><Typography variant='body1'>Identified 50+ automatable business processes and implemented their corresponding test scripts in Eclipse</Typography></li>
 <li><Typography variant='body1'>Provided project feedback, progress and updates on Trello</Typography></li>
 <li><Typography variant='body1'>Redesigned an automation framework to accommodate UAT test cases</Typography></li>  
             </ul>
@@ -223,7 +223,7 @@ partialVisibility
             <Typography variant='subtitle2'>May 2018 – August 2018 | Ottawa, ON</Typography>
             <ul>
                 <li><Typography variant='body1'>Researched on data visualization tools such as Plotly and RawGraphs</Typography></li>
-<li><Typography variant='body1'>Reported and troubleshot our system’s bugs using JIRA</Typography></li>
+<li><Typography variant='body1'>Reported and troubleshot 300+ system bugs using JIRA</Typography></li>
 <li><Typography variant='body1'>Logged data metrics to better visualize our portal’s efficacity and user engagement</Typography></li>
 
             </ul>
@@ -238,7 +238,7 @@ partialVisibility
             <ul>
                 <li><Typography variant='body1'>Ensured that guests were satisfied with their stay by encouraging feedback and integrating comments</Typography></li>
 <li><Typography variant='body1'>Created high-quality client-host relationships by writing welcome documents with local amenities and services</Typography></li>
-<li><Typography variant='body1'>Used entrepreneurial skills to promote the offered services and polish website descriptions</Typography></li>
+<li><Typography variant='body1'>Used entrepreneurial skills to promote the offered services and polish listing's descriptions</Typography></li>
             </ul>
             
             </div>

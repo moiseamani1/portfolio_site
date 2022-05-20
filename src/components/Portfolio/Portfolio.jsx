@@ -28,7 +28,7 @@ const Portfolio = () => {
 
   },
   {
-    "title": "ML sandbox",
+    "title": "ML Sandbox",
     "description": "A sandbox where I used Youtube's API, Mongo and Node scheduler.",
     "github": "https://github.com/moiseamani1/ml-sandbox",
 

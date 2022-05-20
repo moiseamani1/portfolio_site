@@ -7,7 +7,7 @@ const Home = () => {
     const classes=useStyles();
 
 
-
+     
 
     return (
         <main className={classes.content}>
@@ -21,7 +21,7 @@ const Home = () => {
           <p>
           <Typography variant="h5"><span className={classes.greeting}>HI, I'M MOISE.<br/></span></Typography>
         <Typography variant="h4"><span className={classes.intro}>I'm a bilingual (en/fr) Computer Engineer that graduated from UOttawa.
-        I have 7+ years of software development experience. I'm currently working for <a href='https://www.canada.ca/en/immigration-refugees-citizenship.html' target="_blank" className={classes.location} rel="noreferrer">IRCC.</a>
+        I have {new Date().getFullYear()-2015}+ years of software development experience. I'm currently working for <a href='https://www.canada.ca/en/immigration-refugees-citizenship.html' target="_blank" className={classes.location} rel="noreferrer">IRCC.</a>
         </span>
        </Typography>
          </p>  
